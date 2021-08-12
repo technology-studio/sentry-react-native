@@ -27,7 +27,14 @@
     "prepare": "yarn build"
   },
   "dependencies": {
+    "@sentry/react-native": "^2.6.2"
   },
   "peerDependencies": {
+    "@txo-peer-dep/observable-redux": "^2.0.0",
+    "@txo-peer-dep/react-conditional-navigation": "^4.0.0",
+    "@txo/identity-react": "^6.1.0",
+    "react-native": "*",
+    "react-navigation": "*",
+    "react-redux": "^7.2.4"
   }
 }
