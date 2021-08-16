@@ -5,12 +5,10 @@
 **/
 
 import { AbstractStateObservableManager } from '@txo-peer-dep/observable-redux'
-import { selectUserId } from '@txo/identity-react'
-import '@txo-peer-dep/react-conditional-navigation'
-import { DefaultRootState } from 'react-redux'
 
-import {
+import type {
   NavigationState,
+  RootState,
 } from '../Model/Types'
 
 import {
@@ -19,7 +17,7 @@ import {
   setUser,
 } from './SentryHelper'
 
-class NavigationManager extends AbstractStateObservableManager<NavigationState | null, DefaultRootState> {
+class NavigationManager extends AbstractStateObservableManager<NavigationState | null, RootState> {
   constructor () {
     super((state) => state.navigation)
   }
@@ -35,11 +33,7 @@ class NavigationManager extends AbstractStateObservableManager<NavigationState |
 
 const navigationManager = new NavigationManager()
 
-class UserManager extends AbstractStateObservableManager<string | null, DefaultRootState> {
-  constructor () {
-    super(selectUserId)
-  }
-
+export class UserManager extends AbstractStateObservableManager<string | null, Record<string, unknown>> {
   onChange (userId: string | null): void {
     super.onChange(userId)
     setUser(userId
@@ -51,9 +45,6 @@ class UserManager extends AbstractStateObservableManager<string | null, DefaultR
   }
 }
 
-const userManager = new UserManager()
-
 export {
   navigationManager,
-  userManager,
 }

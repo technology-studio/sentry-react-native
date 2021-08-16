@@ -9,9 +9,11 @@ import * as Sentry from '@sentry/react-native'
 
 import type { SentryConfig } from '../Model/Types'
 
-import './SentryManager'
+import { UserManager } from './SentryManager'
 
 export const initSentry = (sentryConfig: SentryConfig): void => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const userManager = new UserManager(sentryConfig.userIdSelector)
   const strippedBaseUrl = is(sentryConfig.baseUrl.match(/\/\/([\w\W]*?)\/[\w\W]*/)?.[1])
   Sentry.init({
     ...sentryConfig,

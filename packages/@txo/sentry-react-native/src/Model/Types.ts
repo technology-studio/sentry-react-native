@@ -4,14 +4,19 @@
  * @Copyright: Technology Studio
 **/
 
-import { NavigationState as _NavigationState } from 'react-navigation'
+import type { NavigationState as _NavigationState } from 'react-navigation'
 
 export type NavigationState = _NavigationState & {
   routeName?: string,
+}
+
+export type RootState = {
+  navigation: NavigationState,
 }
 
 export type SentryConfig = {
   baseUrl: string,
   dsn: string,
   environment: string,
+  userIdSelector: (state: Record<string, unknown>) => string | null,
 }

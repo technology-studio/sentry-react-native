@@ -5,7 +5,7 @@
 **/
 
 import * as Sentry from '@sentry/react-native'
-import { NavigationParams } from 'react-navigation'
+import type { NavigationParams } from 'react-navigation'
 
 import { NavigationState } from '../Model/Types'
 
