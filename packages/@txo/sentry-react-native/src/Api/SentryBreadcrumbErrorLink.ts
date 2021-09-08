@@ -8,14 +8,14 @@ import { onError } from '@apollo/client/link/error'
 import * as Sentry from '@sentry/react-native'
 
 export const sentryBreadcrumbErrorLink = onError(({ graphQLErrors, operation }) => {
-  if (graphQLErrors?.length > 0) {
+  if ((graphQLErrors ?? []).length > 0) {
     // TODO: send whole error as an object and stringify in beforeSend to prevent heavy computation
     Sentry.addBreadcrumb({
       category: 'graphql',
       message: operation.operationName,
       data: {
         errors: JSON.stringify(
-          graphQLErrors.map(({ message, name, path }) => ({
+          graphQLErrors?.map(({ message, name, path }) => ({
             message,
             name,
             path,
