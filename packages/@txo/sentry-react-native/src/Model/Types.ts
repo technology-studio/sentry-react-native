@@ -18,5 +18,6 @@ export type SentryConfig = {
   baseUrl: string,
   dsn: string,
   environment: string,
+  tracesSampleRate?: number,
   userIdSelector: (state: Record<string, unknown>) => string | null,
 }
