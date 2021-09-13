@@ -7,6 +7,11 @@
 import { onError } from '@apollo/client/link/error'
 import * as Sentry from '@sentry/react-native'
 
+import {
+  stringifyAndFilter,
+  stripSignature,
+} from './SentryHelper'
+
 export const sentryBreadcrumbErrorLink = onError(({ graphQLErrors, operation }) => {
   if ((graphQLErrors ?? []).length > 0) {
     // TODO: send whole error as an object and stringify in beforeSend to prevent heavy computation
@@ -14,15 +19,15 @@ export const sentryBreadcrumbErrorLink = onError(({ graphQLErrors, operation }) 
       category: 'graphql',
       message: operation.operationName,
       data: {
-        errors: JSON.stringify(
+        headers: stripSignature(stringifyAndFilter(operation.getContext().headers)),
+        payload: stringifyAndFilter(operation.variables),
+        errors: stringifyAndFilter(
           graphQLErrors?.map(({ message, name, path }) => ({
             message,
             name,
             path,
           })),
-          null,
-          2,
-        ).replace(/(a)u(th)/gmi, '$1*$2'),
+        ),
       },
       level: Sentry.Severity.Error,
     })

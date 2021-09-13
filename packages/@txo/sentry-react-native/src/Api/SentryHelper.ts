@@ -48,3 +48,9 @@ export const prepareNavigationParams = (obj: NavigationParams): NavigationParams
     return acc
   }, {})
 }
+
+export const stringifyAndFilter = (value: unknown): string => (
+  JSON.stringify(value, null, 2).replace(/(a)u(th)/gmi, '$1*$2')
+)
+
+export const stripSignature = (jwt: string): string => jwt.replace(/(Bearer [\w\W]*?\.[\w\W]*?)(\.[\w\W]*)/, '$1')
