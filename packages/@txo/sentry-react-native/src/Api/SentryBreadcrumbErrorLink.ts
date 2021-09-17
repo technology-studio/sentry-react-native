@@ -12,13 +12,14 @@ import {
   stripSignature,
 } from './SentryHelper'
 
-export const sentryBreadcrumbErrorLink = onError(({ graphQLErrors, operation }) => {
+export const sentryBreadcrumbErrorLink = onError(({ graphQLErrors, response, operation }) => {
   if ((graphQLErrors ?? []).length > 0) {
     // TODO: send whole error as an object and stringify in beforeSend to prevent heavy computation
     Sentry.addBreadcrumb({
       category: 'graphql',
       message: operation.operationName,
       data: {
+        response: stringifyAndFilter(response),
         headers: stripSignature(stringifyAndFilter(operation.getContext().headers)),
         payload: stringifyAndFilter(operation.variables),
         errors: stringifyAndFilter(
