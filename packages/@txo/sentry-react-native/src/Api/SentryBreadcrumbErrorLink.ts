@@ -20,15 +20,11 @@ export const sentryBreadcrumbErrorLink = onError(({ graphQLErrors, response, ope
       message: operation.operationName,
       data: {
         response: stringifyAndFilter(response),
-        headers: stripSignature(stringifyAndFilter(operation.getContext().headers)),
-        payload: stringifyAndFilter(operation.variables),
-        errors: stringifyAndFilter(
-          graphQLErrors?.map(({ message, name, path }) => ({
-            message,
-            name,
-            path,
-          })),
-        ),
+        request: {
+          headers: stripSignature(stringifyAndFilter(operation.getContext().headers)),
+          variables: stringifyAndFilter(operation.variables),
+          operation: operation.query.loc?.source.body.replace(/\\n/g, '\n'),
+        },
       },
       level: Sentry.Severity.Error,
     })
