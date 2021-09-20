@@ -4,6 +4,7 @@
  * @Copyright: Technology Studio
 **/
 
+export * from './Api/SentryBreadcrumbErrorLink'
 export * from './Api/SentryHelper'
 export * from './Api/SentryInit'
 export * from './Model/Types'
