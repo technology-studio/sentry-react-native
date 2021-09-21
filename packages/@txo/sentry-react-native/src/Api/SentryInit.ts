@@ -20,6 +20,7 @@ export const initSentry = (sentryConfig: SentryConfig): void => {
     const userManager = new UserManager(sentryConfig.userIdSelector)
     const strippedBaseUrl = is(sentryConfig.baseUrl.match(/\/\/([\w\W]*?)\/[\w\W]*/)?.[1])
     Sentry.init({
+      tracesSampleRate: 0,
       ...sentryConfig,
       integrations: [
         new Sentry.ReactNativeTracing({

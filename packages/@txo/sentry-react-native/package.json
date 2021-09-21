@@ -35,6 +35,7 @@
     "@txo-peer-dep/log": "^4.0.0",
     "@txo-peer-dep/observable-redux": "^2.0.0",
     "react-native": "*",
+    "react-redux": "*",
     "redux": "*"
   }
 }

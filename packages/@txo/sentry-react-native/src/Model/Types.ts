@@ -5,6 +5,7 @@
 **/
 
 import type { NavigationState as _NavigationState } from 'react-navigation'
+import type { DefaultRootState } from 'react-redux'
 
 export type NavigationState = _NavigationState & {
   routeName?: string,
@@ -19,5 +20,5 @@ export type SentryConfig = {
   dsn: string,
   environment: string,
   tracesSampleRate?: number,
-  userIdSelector: (state: Record<string, unknown>) => string | null,
+  userIdSelector: (state: DefaultRootState) => string | null,
 }
