@@ -6,6 +6,7 @@
 
 import type { NavigationState as _NavigationState } from 'react-navigation'
 import type { DefaultRootState } from 'react-redux'
+import type { Options } from '@sentry/types'
 
 export type NavigationState = _NavigationState & {
   routeName?: string,
@@ -21,4 +22,5 @@ export type SentryConfig = {
   environment: string,
   tracesSampleRate?: number,
   userIdSelector: (state: DefaultRootState) => string | null,
+  beforeBreadcrumb?: Options['beforeBreadcrumb'],
 }
