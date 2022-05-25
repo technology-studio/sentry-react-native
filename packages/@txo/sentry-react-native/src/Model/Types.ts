@@ -6,6 +6,7 @@
 
 import type { NavigationState as _NavigationState } from 'react-navigation'
 import type { DefaultRootState } from 'react-redux'
+import type { ReactNativeOptions } from '@sentry/react-native'
 
 export type NavigationState = _NavigationState & {
   routeName?: string,
@@ -15,10 +16,8 @@ export type RootState = {
   navigation: NavigationState,
 }
 
-export type SentryConfig = {
+export type SentryConfig = Partial<ReactNativeOptions> & {
   baseUrl: string,
-  dsn: string,
-  environment: string,
-  tracesSampleRate?: number,
   userIdSelector: (state: DefaultRootState) => string | null,
+  debug?: boolean,
 }
