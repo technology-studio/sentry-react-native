@@ -16,7 +16,7 @@ const log = new Log('txo.sentry-react-native.Api.SentryInit')
 
 export const initSentry = (sentryConfig: SentryConfig): void => {
   if (!!sentryConfig.debug || process.env.NODE_ENV === 'production') {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
     const userManager = new UserManager(sentryConfig.userIdSelector)
     const strippedBaseUrl = is(sentryConfig.baseUrl.match(/\/\/([\w\W]*?)\/[\w\W]*/)?.[1])
     Sentry.init({

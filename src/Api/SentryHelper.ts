@@ -7,13 +7,11 @@
 import * as Sentry from '@sentry/react-native'
 import type { NavigationParams } from 'react-navigation'
 
-import { NavigationState } from '../Model/Types'
+import type { NavigationState } from '../Model/Types'
 
-export const setUser = (user: Sentry.User | null): void => {
-  return Sentry.configureScope(scope => {
-    scope.setUser(user)
-  })
-}
+export const setUser = (user: Sentry.User | null): void => Sentry.configureScope(scope => {
+  scope.setUser(user)
+})
 
 export const addNavigationBreadcrumb = (navigation: NavigationState): void => {
   const anonymizedParams = navigation.params
@@ -22,7 +20,7 @@ export const addNavigationBreadcrumb = (navigation: NavigationState): void => {
   Sentry.addBreadcrumb({
     category: 'nav',
     message: `Navigated: ${navigation?.routeName ?? ''}`,
-    level: Sentry.Severity.Info,
+    level: 'info',
     data: {
       params: anonymizedParams,
     },
@@ -38,16 +36,14 @@ export const getCurrentNavigation = (navigation: NavigationState): NavigationSta
   }
 }
 
-export const prepareNavigationParams = (obj: NavigationParams): NavigationParams => {
-  return Object.keys(obj).reduce<NavigationParams>((acc, key) => {
-    if (obj[key] && typeof obj[key] === 'object') {
-      acc = { ...acc, id: obj.id, [key]: prepareNavigationParams(obj[key]) }
-    } else {
-      acc = { ...acc, id: obj.id }
-    }
-    return acc
-  }, {})
-}
+export const prepareNavigationParams = (obj: NavigationParams): NavigationParams => Object.keys(obj).reduce<NavigationParams>((acc, key) => {
+  if (obj[key] && typeof obj[key] === 'object') {
+    acc = { ...acc, id: obj.id, [key]: prepareNavigationParams(obj[key]) }
+  } else {
+    acc = { ...acc, id: obj.id }
+  }
+  return acc
+}, {})
 
 export const stringifyAndFilter = (value: unknown): string => (
   JSON.stringify(value, null, 2)?.replace(/(a)u(th)/gmi, '$1*$2')

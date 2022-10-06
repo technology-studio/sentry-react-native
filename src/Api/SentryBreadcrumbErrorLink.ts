@@ -26,7 +26,7 @@ export const sentryBreadcrumbErrorLink = onError(({ graphQLErrors, response, ope
           operation: operation.query.loc?.source.body.replace(/\\n/g, '\n'),
         },
       },
-      level: Sentry.Severity.Error,
+      level: 'error',
     })
   }
 })
