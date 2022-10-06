@@ -55,7 +55,7 @@
     "@txo-peer-dep/log": "^4.0.0",
     "@txo-peer-dep/observable-redux": "^2.0.0",
     "@txo/log-console": "^3.0.0",
-    "@types/jest": "^29.1.1",
+    "@types/jest": "^29.1.2",
     "@types/react-native": "^0.70.4",
     "@types/react": "^18.0.21",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
