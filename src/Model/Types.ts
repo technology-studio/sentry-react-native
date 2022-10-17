@@ -5,8 +5,10 @@
 **/
 
 import type { NavigationState as _NavigationState } from 'react-navigation'
-import type { DefaultRootState } from 'react-redux'
 import type { ReactNativeOptions } from '@sentry/react-native'
+
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface DefaultRootState {}
 
 export type NavigationState = _NavigationState & {
   routeName?: string,
