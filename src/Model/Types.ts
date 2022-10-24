@@ -5,8 +5,8 @@
 **/
 
 import type { NavigationState as _NavigationState } from 'react-navigation'
-import type { DefaultRootState } from 'react-redux'
 import type { ReactNativeOptions } from '@sentry/react-native'
+import type { DefaultRootState } from '@txo-peer-dep/redux'
 
 export type NavigationState = _NavigationState & {
   routeName?: string,
