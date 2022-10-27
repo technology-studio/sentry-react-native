@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/technology-studio/sentry-react-native/compare/v1.2.1...v1.2.2) (2022-10-27)
+
+
+### Bug fixes
+
+* fix package.json ([#59](https://github.com/technology-studio/sentry-react-native/issues/59)) ([6d9a88e](https://github.com/technology-studio/sentry-react-native/commit/6d9a88ec26c20eda3fe0a939362833211c5cf067))
+
 ## [1.2.1](https://github.com/technology-studio/sentry-react-native/compare/v1.2.0...v1.2.1) (2022-10-24)
 
 
