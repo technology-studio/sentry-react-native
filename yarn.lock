@@ -2526,10 +2526,10 @@
   dependencies:
     "@txo/config-manager" "^3.0.1"
 
-"@txo-peer-dep/observable-redux@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@txo-peer-dep/observable-redux/-/observable-redux-2.0.0.tgz#98d04577d5aa7bc2278fbc17cd84967f61d855ab"
-  integrity sha512-rOMaxb5dpVL6fOMmn9heJUbGrCnf+sHZltRlsx/SkSClpkSjwkOcd2p8/wYDTDMkG94MM9b/6YZU515KRw3mCw==
+"@txo-peer-dep/observable-redux@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@txo-peer-dep/observable-redux/-/observable-redux-2.0.1.tgz#c9aa5f4a180d9f2f9dc8f9b087e97213d9608cf6"
+  integrity sha512-OSo4d58ZnCWBXpm7FOVYenHJBjr+gXlVYgE/3rRaZ3xTs/mVOwlUZt9UAIIiOlLASFEFBbF2Cif2QoyWl/Rxlw==
 
 "@txo-peer-dep/redux@^1.0.0":
   version "1.0.0"
