@@ -47,7 +47,7 @@
     "redux": "*"
   },
   "devDependencies": {
-    "@apollo/client": "^3.7.5",
+    "@apollo/client": "^3.7.6",
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "@commitlint/cli": "^17.4.2",
