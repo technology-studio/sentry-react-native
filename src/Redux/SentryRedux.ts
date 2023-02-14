@@ -12,16 +12,17 @@ const log = new Log('txo.sentry-react-native.Redux.SentryRedux')
 
 export const sentryTransactionNavigationMiddleware: Middleware =
   (store) => (next) => (action) => {
-    if (action.type?.startsWith('Navigation/')) {
+    const type = action.type as string | undefined
+    if (type?.startsWith('Navigation/') ?? false) {
       const currentTransaction = Sentry.getCurrentHub().getScope()?.getTransaction()
-      if (currentTransaction) {
+      if (currentTransaction != null) {
         currentTransaction.finish()
         log.debug('currentTransaction', { currentTransaction })
       }
       const transaction = Sentry.startTransaction({ name: 'Navigation' })
       Sentry.getCurrentHub().configureScope(scope => scope.setSpan(transaction))
       const span = transaction.startChild({
-        description: action.type,
+        description: type,
         op: 'navigation',
         data: {
           routeName: action.routeName,
