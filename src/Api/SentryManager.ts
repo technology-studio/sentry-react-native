@@ -24,7 +24,7 @@ class NavigationManager extends AbstractStateObservableManager<NavigationState |
 
   onChange (state: NavigationState | null): void {
     super.onChange(state)
-    if (state) {
+    if (state != null) {
       const currentNavigation = getCurrentNavigation(state)
       addNavigationBreadcrumb(currentNavigation)
     }
@@ -36,7 +36,7 @@ const navigationManager = new NavigationManager()
 export class UserManager extends AbstractStateObservableManager<string | null, Record<string, unknown>> {
   onChange (userId: string | null): void {
     super.onChange(userId)
-    setUser(userId
+    setUser((userId != null && userId !== '')
       ? {
           id: userId,
         }
