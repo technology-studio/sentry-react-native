@@ -5,7 +5,6 @@
 **/
 
 import * as Sentry from '@sentry/react-native'
-import type { NavigationParams } from 'react-navigation'
 
 import type { NavigationState } from '../Model/Types'
 
@@ -39,9 +38,12 @@ export const getCurrentNavigation = (navigation: NavigationState): NavigationSta
   }
 }
 
+// NOTE: NavigationParams in react-navigation use `any` as type for values
+type NavigationParams = Record<string, unknown>
+
 export const prepareNavigationParams = (obj: NavigationParams): NavigationParams => Object.keys(obj).reduce<NavigationParams>((acc, key) => {
   if (obj[key] != null && typeof obj[key] === 'object') {
-    acc = { ...acc, id: obj.id, [key]: prepareNavigationParams(obj[key]) }
+    acc = { ...acc, id: obj.id, [key]: prepareNavigationParams(obj[key] as NavigationParams) }
   } else {
     acc = { ...acc, id: obj.id }
   }
