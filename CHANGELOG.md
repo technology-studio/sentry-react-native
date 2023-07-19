@@ -1,3 +1,10 @@
+## [1.2.13](https://github.com/technology-studio/sentry-react-native/compare/v1.2.12...v1.2.13) (2023-07-19)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo-peer-dep/redux to ^1.0.1 ([cc417ae](https://github.com/technology-studio/sentry-react-native/commit/cc417aed2602780f994e1b240d8b09c3aa2552fa))
+
 ## [1.2.12](https://github.com/technology-studio/sentry-react-native/compare/v1.2.11...v1.2.12) (2023-07-13)
 
 
