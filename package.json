@@ -1,6 +1,6 @@
 {
   "name": "@txo/sentry-react-native",
-  "version": "1.2.12",
+  "version": "1.2.13",
   "description": "Technology Studio - Sentry react native",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -44,7 +44,7 @@
     "@sentry/react-native": "^5.7.1",
     "@txo-peer-dep/log": "^4.0.0",
     "@txo-peer-dep/observable-redux": "^2.0.1",
-    "@txo-peer-dep/redux": "^1.0.0",
+    "@txo-peer-dep/redux": "^1.0.1",
     "react-native": "*",
     "react-redux": "*",
     "redux": "*"
@@ -60,7 +60,7 @@
     "@sentry/react-native": "^5.7.1",
     "@txo-peer-dep/log": "^4.0.0",
     "@txo-peer-dep/observable-redux": "^2.0.1",
-    "@txo-peer-dep/redux": "^1.0.0",
+    "@txo-peer-dep/redux": "^1.0.1",
     "@txo/log-console": "^3.0.0",
     "@types/jest": "^29.5.3",
     "@types/react": "^18.2.15",
