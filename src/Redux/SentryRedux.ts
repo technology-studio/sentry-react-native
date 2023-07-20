@@ -22,7 +22,6 @@ const isNavigationNavigateAction = (action: AnyAction): action is NavigationNavi
 // TODO: refactor to use new react-navigation v6
 export const sentryTransactionNavigationMiddleware: Middleware =
   (store) => (next) => (action: AnyAction) => {
-    const type = action.type as string | undefined
     if (isNavigationNavigateAction(action)) {
       const currentTransaction = Sentry.getCurrentHub().getScope()?.getTransaction()
       if (currentTransaction != null) {
@@ -32,7 +31,7 @@ export const sentryTransactionNavigationMiddleware: Middleware =
       const transaction = Sentry.startTransaction({ name: 'Navigation' })
       Sentry.getCurrentHub().configureScope(scope => scope.setSpan(transaction))
       const span = transaction.startChild({
-        description: type,
+        description: action.type,
         op: 'navigation',
         data: {
           routeName: action.routeName,
