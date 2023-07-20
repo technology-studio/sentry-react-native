@@ -5,15 +5,24 @@
 **/
 
 import * as Sentry from '@sentry/react-native'
-import type { Middleware } from 'redux'
+import type {
+  AnyAction,
+  Middleware,
+} from 'redux'
 import { Log } from '@txo/log'
+import { type NavigationNavigateAction } from 'react-navigation'
 
 const log = new Log('txo.sentry-react-native.Redux.SentryRedux')
 
+const isNavigationNavigateAction = (action: AnyAction): action is NavigationNavigateAction => {
+  const type = action.type as string | undefined
+  return type?.startsWith('Navigation/') ?? false
+}
+
+// TODO: refactor to use new react-navigation v6
 export const sentryTransactionNavigationMiddleware: Middleware =
-  (store) => (next) => (action) => {
-    const type = action.type as string | undefined
-    if (type?.startsWith('Navigation/') ?? false) {
+  (store) => (next) => (action: AnyAction) => {
+    if (isNavigationNavigateAction(action)) {
       const currentTransaction = Sentry.getCurrentHub().getScope()?.getTransaction()
       if (currentTransaction != null) {
         currentTransaction.finish()
@@ -22,7 +31,7 @@ export const sentryTransactionNavigationMiddleware: Middleware =
       const transaction = Sentry.startTransaction({ name: 'Navigation' })
       Sentry.getCurrentHub().configureScope(scope => scope.setSpan(transaction))
       const span = transaction.startChild({
-        description: type,
+        description: action.type,
         op: 'navigation',
         data: {
           routeName: action.routeName,
