@@ -1,3 +1,10 @@
+## [1.2.24](https://github.com/technology-studio/sentry-react-native/compare/v1.2.23...v1.2.24) (2023-07-24)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/log to ^2.0.12 ([6d0f141](https://github.com/technology-studio/sentry-react-native/commit/6d0f1413d45988aa2dce16eb27bbc7cf0e2ec9bd))
+
 ## [1.2.23](https://github.com/technology-studio/sentry-react-native/compare/v1.2.22...v1.2.23) (2023-07-24)
 
 
