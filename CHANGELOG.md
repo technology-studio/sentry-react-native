@@ -1,3 +1,10 @@
+## [1.2.30](https://github.com/technology-studio/sentry-react-native/compare/v1.2.29...v1.2.30) (2023-08-15)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/types to ^1.6.1 ([5286e03](https://github.com/technology-studio/sentry-react-native/commit/5286e0383db7d4ec54abffc90c4c4ea26e94ef8a))
+
 ## [1.2.29](https://github.com/technology-studio/sentry-react-native/compare/v1.2.28...v1.2.29) (2023-08-11)
 
 
