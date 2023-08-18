@@ -3410,10 +3410,10 @@
     localforage "^1.8.1"
     tslib "^2.4.1 || ^1.9.3"
 
-"@sentry/react-native@^5.9.0":
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-5.9.0.tgz#f9ffd2c68a90e68f6d0e5808068aeed0c7a11aeb"
-  integrity sha512-d5HSi2QKJgRRC4kZFHZTs11ivJeGolMxlr8ciIAMpFIwdjMKQpuU9NiP6o0givPgP3en65gXHQvGxj4OtLVzzQ==
+"@sentry/react-native@^5.9.1":
+  version "5.9.1"
+  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-5.9.1.tgz#8fd87795225f2e62f95007a0d009f83121566c66"
+  integrity sha512-L5Ah5cZ39b6iNlsHXHj7vxiTePGTxs+JWJPCyGYnmeleh0IQaDedDJJgYwB78D8mGuq4JnTOY5B9BrFKBtLLlg==
   dependencies:
     "@sentry/browser" "7.63.0"
     "@sentry/cli" "2.20.5"
