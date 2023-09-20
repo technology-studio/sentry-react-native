@@ -15,7 +15,7 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@apollo/client@^3.8.3":
+"@apollo/client@^3.8.4":
   version "3.8.4"
   resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.8.4.tgz#b6d67251422ee8bb05e240ffa65fe8fbd336cd66"
   integrity sha512-QFXE4ylSHUa6LgYoOGsPysJCm4YJOOM1NwHyF6msZdZXIerqUVpLvxQOdQEXgS0RWvYiBMC1wGOWKzJKSWBdAg==
@@ -2482,7 +2482,7 @@
     localforage "^1.8.1"
     tslib "^2.4.1 || ^1.9.3"
 
-"@sentry/react-native@^5.9.1":
+"@sentry/react-native@^5.9.2":
   version "5.9.2"
   resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-5.9.2.tgz#afbd6eb899dbf5d95b12e0485778be8a59a01b7f"
   integrity sha512-UFIXi2rFwYlixQ4ICN7wp04mJvJ/i7bwVppVNXkkCI4fK7YWXQY5eMvxpURtBoSLt9gKmvqfi0EfjOsIaKsXrg==
@@ -4926,7 +4926,7 @@ eslint-config-standard@17.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-17.1.0.tgz#40ffb8595d47a6b242e07cbfd49dc211ed128975"
   integrity sha512-IwHwmaBNtDK4zDHQukFDW5u/aTb8+meQWZvNFWkiGmbWjD6bqyuSSBxxXKkCftCUzc1zwCH2m/baCNDLGmuO5Q==
 
-eslint-config-txo-typescript-react@^1.2.39:
+eslint-config-txo-typescript-react@^1.2.40:
   version "1.2.40"
   resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript-react/-/eslint-config-txo-typescript-react-1.2.40.tgz#25ea533346e2ff77c672d2cf223c5380c564fe65"
   integrity sha512-YM6bjlwsg7ljI6l1FcbT3SajVMDvXsXtp+3AZ3t4kT8h+RCz/AlCEDpyzEkypeYQhlodRRL9YnhYF0mcu4mXng==
