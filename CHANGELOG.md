@@ -1,3 +1,10 @@
+## [1.2.34](https://github.com/technology-studio/sentry-react-native/compare/v1.2.33...v1.2.34) (2023-09-20)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo-peer-dep/log to ^4.0.2 ([8ef47a5](https://github.com/technology-studio/sentry-react-native/commit/8ef47a54a48975745f088339b99fc0367f701e6e))
+
 ## [1.2.33](https://github.com/technology-studio/sentry-react-native/compare/v1.2.32...v1.2.33) (2023-09-20)
 
 
