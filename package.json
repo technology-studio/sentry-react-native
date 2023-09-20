@@ -42,7 +42,7 @@
   },
   "peerDependencies": {
     "@sentry/react-native": "^5.9.2",
-    "@txo-peer-dep/log": "^4.0.1",
+    "@txo-peer-dep/log": "^4.0.2",
     "@txo-peer-dep/observable-redux": "^2.0.1",
     "@txo-peer-dep/redux": "^1.0.1",
     "react-native": "*",
@@ -58,7 +58,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@sentry/react-native": "^5.9.2",
-    "@txo-peer-dep/log": "^4.0.1",
+    "@txo-peer-dep/log": "^4.0.2",
     "@txo-peer-dep/observable-redux": "^2.0.1",
     "@txo-peer-dep/redux": "^1.0.1",
     "@txo/log-console": "^3.0.0",
