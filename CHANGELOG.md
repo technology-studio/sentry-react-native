@@ -1,3 +1,11 @@
+## [1.2.33](https://github.com/technology-studio/sentry-react-native/compare/v1.2.32...v1.2.33) (2023-09-20)
+
+
+### Bug fixes
+
+* **deps:** update dependency @sentry/react-native to ^5.9.2 ([9fc5d04](https://github.com/technology-studio/sentry-react-native/commit/9fc5d04abb8cbf149b7b442cfce3d8ecafb49de2))
+* recreate yarn.lock ([#550](https://github.com/technology-studio/sentry-react-native/issues/550)) ([be865be](https://github.com/technology-studio/sentry-react-native/commit/be865be3a830ee465d81541e319372a33f40712f))
+
 ## [1.2.32](https://github.com/technology-studio/sentry-react-native/compare/v1.2.31...v1.2.32) (2023-08-30)
 
 
