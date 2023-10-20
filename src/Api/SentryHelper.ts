@@ -4,9 +4,8 @@
  * @Copyright: Technology Studio
 **/
 
+import { type Route } from '@react-navigation/native'
 import * as Sentry from '@sentry/react-native'
-
-import type { NavigationState } from '../Model/Types'
 
 export const setUser = (user: Sentry.User | null): void => {
   Sentry.configureScope(scope => {
@@ -14,28 +13,18 @@ export const setUser = (user: Sentry.User | null): void => {
   })
 }
 
-export const addNavigationBreadcrumb = (navigation: NavigationState): void => {
-  const anonymizedParams = (navigation.params != null)
-    ? JSON.stringify(prepareNavigationParams(navigation.params), null, 2)
+export const addNavigationBreadcrumb = (route: Route<string, Record<string, unknown>>): void => {
+  const anonymizedParams = (route.params != null)
+    ? JSON.stringify(prepareNavigationParams(route.params), null, 2)
     : {}
   Sentry.addBreadcrumb({
     category: 'nav',
-    message: `Navigated: ${navigation?.routeName ?? ''}`,
+    message: `Navigated: ${route?.name ?? ''}`,
     level: 'info',
     data: {
       params: anonymizedParams,
     },
   })
-}
-
-export const getCurrentNavigation = (navigation: NavigationState): NavigationState => {
-  const { routes } = navigation
-  // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions -- TODO: routes could be undefined - types are probably not correct and this will also probably need to be refactored when migrating to new react-navigation
-  if (routes) {
-    return getCurrentNavigation(routes[navigation.index])
-  } else {
-    return navigation
-  }
 }
 
 // NOTE: NavigationParams in react-navigation use `any` as type for values
