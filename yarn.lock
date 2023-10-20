@@ -2860,6 +2860,15 @@
   resolved "https://registry.yarnpkg.com/@txo-peer-dep/redux/-/redux-1.0.1.tgz#dfe2205cf74e6344ccc635ed330632b84ac3028b"
   integrity sha512-6AzIqr8wmllD2aMnwwsbk0hqNG5ldkON5faEg1pHQk03G118G7NkAuE61pUveZNX9tFdtCGfI+t24OCeXKfx4Q==
 
+"@txo/commitlint@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@txo/commitlint/-/commitlint-1.0.2.tgz#b9c1fff48ea6b24c17c6608538a24521b13f1cdb"
+  integrity sha512-cDVfrhNEZjKaJFj9tLVNa1b9XKvCV97yODg9sOUFcy7yw+qIPsScxK2xgh0Mxjr5intl6htJQFAu0tOMIbD26A==
+  dependencies:
+    "@commitlint/cli" "^17.8.1"
+    "@commitlint/config-conventional" "^17.8.1"
+    commitizen "^4.3.0"
+
 "@txo/config-manager@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.1.0.tgz#9a38d0ba2b2355f973775bafe884cdbb7225dc0d"
@@ -2874,6 +2883,16 @@
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.13.tgz#663100f59df18f4ddec9d85f62a20ec4b5e24b54"
   integrity sha512-fDUAJ5n+bC+/xqHFpM4Ua4nuQjWcRLTSksLR5mLXZoUlH787SUzFkpUvjFJeiGKXOqUKt35ImInLZb0oQ6yHhg==
+
+"@txo/semantic-release@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@txo/semantic-release/-/semantic-release-1.0.0.tgz#b2ccee542b864cc6d4c477c4e096ad6c326bd53e"
+  integrity sha512-K9GQp+DKprx2zFRpkT0ELQHnp5zConLL9GZG8wASRW1v12b/TJ6Hf0Hx2doEFGZ0WDfy2+8B+mHMF4SHi3s4PA==
+  dependencies:
+    "@semantic-release/changelog" "^6.0.3"
+    "@semantic-release/git" "^10.0.1"
+    semantic-release "^22.0.5"
+    semantic-release-slack-bot "^4.0.2"
 
 "@txo/types@^1.7.0":
   version "1.7.0"
