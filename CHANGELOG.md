@@ -1,3 +1,26 @@
+## [2.0.0](https://github.com/technology-studio/sentry-react-native/compare/v1.2.38...v2.0.0) (2023-10-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** update dependency react-navigation to v6
+
+* chore: update react-navigation
+
+* feat: refactor to support react-navigation v6
+
+* chore: sync changes from boilerplate
+
+* chore: remove unused package
+
+* chore: remove saga packages and update eslint config
+
+* chore: remove react-redux
+
+### Features
+
+* **deps:** update dependency react-navigation to v6 ([#563](https://github.com/technology-studio/sentry-react-native/issues/563)) ([71f69fc](https://github.com/technology-studio/sentry-react-native/commit/71f69fcd5dcbff19fb86551f5897e2d9d019d1cb))
+
 ## [1.2.38](https://github.com/technology-studio/sentry-react-native/compare/v1.2.37...v1.2.38) (2023-10-11)
 
 
