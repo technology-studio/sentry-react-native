@@ -2816,10 +2816,10 @@
     "@sentry/utils" "7.81.1"
     localforage "^1.8.1"
 
-"@sentry/react-native@^5.14.0":
-  version "5.14.0"
-  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-5.14.0.tgz#741dce01ddf4a61558036ee75fec482f316b3774"
-  integrity sha512-QpG3OWQ5eWwFOE5sNtsOkbFaqCBJB7z9W92CxnD08WUwIPtt+5YcHs4aBi3bVqQAhwmC0VMwxCqCAgxt6VNf5Q==
+"@sentry/react-native@^5.14.1":
+  version "5.14.1"
+  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-5.14.1.tgz#a9e5ff933ebd87d6e3a34b0acca1adc9df29aa80"
+  integrity sha512-qeQC72HMFJX7WEDF5rUT/8OZOkx64O6lZZWds8qGuwcDK0FeHBxt4IPJb6YGBTSW20q7mdK/c2hM8Q2ey13h2A==
   dependencies:
     "@sentry/browser" "7.81.1"
     "@sentry/cli" "2.21.3"
