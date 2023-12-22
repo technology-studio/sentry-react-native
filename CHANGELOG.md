@@ -1,3 +1,10 @@
+## [2.0.9](https://github.com/technology-studio/sentry-react-native/compare/v2.0.8...v2.0.9) (2023-12-22)
+
+
+### Bug fixes
+
+* **deps:** update dependency @sentry/react-native to ^5.15.2 ([1702ca3](https://github.com/technology-studio/sentry-react-native/commit/1702ca3a71156b8b49dce8c1629d0803de41343c))
+
 ## [2.0.8](https://github.com/technology-studio/sentry-react-native/compare/v2.0.7...v2.0.8) (2023-12-07)
 
 
