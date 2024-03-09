@@ -51,7 +51,7 @@
     "@apollo/client": "^3.9.6",
     "@babel/core": "^7.24.0",
     "@babel/preset-env": "^7.24.0",
-    "@react-navigation/native": "^6.1.14",
+    "@react-navigation/native": "^6.1.15",
     "@sentry/react-native": "^5.19.2",
     "@txo-peer-dep/log": "^4.0.3",
     "@txo-peer-dep/observable-redux": "^2.0.1",
