@@ -49,8 +49,8 @@
   },
   "devDependencies": {
     "@apollo/client": "^3.9.7",
-    "@babel/core": "^7.24.1",
-    "@babel/preset-env": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
     "@react-navigation/native": "^6.1.17",
     "@sentry/react-native": "^5.20.0",
     "@txo-peer-dep/log": "^4.0.3",
