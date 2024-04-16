@@ -1,3 +1,52 @@
+## [2.0.19](https://github.com/technology-studio/sentry-react-native/compare/v2.0.18...v2.0.19) (2024-04-09)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/log to ^2.0.16 ([1c09be0](https://github.com/technology-studio/sentry-react-native/commit/1c09be09dbd8cf64bbc81f605e7b185e0546239f))
+
+## [2.0.18](https://github.com/technology-studio/sentry-react-native/compare/v2.0.17...v2.0.18) (2024-04-09)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo-peer-dep/log to ^4.0.4 ([b50f311](https://github.com/technology-studio/sentry-react-native/commit/b50f31113af0356be70e8aaccd1ce3f17a3b26c1))
+
+## [2.0.17](https://github.com/technology-studio/sentry-react-native/compare/v2.0.16...v2.0.17) (2024-03-19)
+
+
+### Bug fixes
+
+* **deps:** update dependency @sentry/react-native to ^5.20.0 ([2e330a2](https://github.com/technology-studio/sentry-react-native/commit/2e330a2299fc28c8d7bbee70c073eae653c53da3))
+
+## [2.0.16](https://github.com/technology-studio/sentry-react-native/compare/v2.0.15...v2.0.16) (2024-03-14)
+
+
+### Bug fixes
+
+* **deps:** update dependency @sentry/react-native to ^5.19.3 ([510129d](https://github.com/technology-studio/sentry-react-native/commit/510129d97b89f55953df9df1c12e429d9d868925))
+
+## [2.0.15](https://github.com/technology-studio/sentry-react-native/compare/v2.0.14...v2.0.15) (2024-03-06)
+
+
+### Bug fixes
+
+* **deps:** update dependency @sentry/react-native to ^5.19.2 ([983adf5](https://github.com/technology-studio/sentry-react-native/commit/983adf5e10c65e8043d08fa5d9f1810388b84621))
+
+## [2.0.14](https://github.com/technology-studio/sentry-react-native/compare/v2.0.13...v2.0.14) (2024-02-26)
+
+
+### Bug fixes
+
+* **deps:** update dependency @sentry/react-native to ^5.19.1 ([7852d41](https://github.com/technology-studio/sentry-react-native/commit/7852d4164cebc7926615646e212aadf38ec618fb))
+
+## [2.0.13](https://github.com/technology-studio/sentry-react-native/compare/v2.0.12...v2.0.13) (2024-02-14)
+
+
+### Bug fixes
+
+* **deps:** update dependency @sentry/react-native to ^5.19.0 ([483abf7](https://github.com/technology-studio/sentry-react-native/commit/483abf77f9b275d027121a54f00ba1c1d101de93))
+
 ## [2.0.12](https://github.com/technology-studio/sentry-react-native/compare/v2.0.11...v2.0.12) (2024-02-02)
 
 
