@@ -6,29 +6,23 @@
 
 import { is } from '@txo/types'
 import * as Sentry from '@sentry/react-native'
-import { Log } from '@txo/log'
 
 import type { SentryConfig } from '../Model/Types'
 
 import { UserManager } from './SentryManager'
 
-const log = new Log('txo.sentry-react-native.Api.SentryInit')
-
 export const initSentry = (sentryConfig: SentryConfig): void => {
-  if (!!(sentryConfig.debug ?? false) || process.env.NODE_ENV === 'production') {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const userManager = new UserManager(sentryConfig.userIdSelector)
-    const strippedBaseUrl = is(sentryConfig.baseUrl.match(/\/\/([\w\W]*?)\/[\w\W]*/)?.[1])
-    Sentry.init({
-      tracesSampleRate: 0,
-      ...sentryConfig,
-      integrations: [
-        new Sentry.ReactNativeTracing({
-          tracingOrigins: ['localhost', strippedBaseUrl],
-        }),
-      ],
-    })
-  } else {
-    log.info('Sentry disabled for non-production NODE_ENV')
-  }
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const userManager = new UserManager(sentryConfig.userIdSelector)
+  const strippedBaseUrl = is(sentryConfig.baseUrl.match(/\/\/([\w\W]*?)\/[\w\W]*/)?.[1])
+  Sentry.init({
+    enabled: (sentryConfig.debug ?? false) || process.env.NODE_ENV === 'production',
+    tracesSampleRate: 0,
+    ...sentryConfig,
+    integrations: [
+      new Sentry.ReactNativeTracing({
+        tracingOrigins: ['localhost', strippedBaseUrl],
+      }),
+    ],
+  })
 }
