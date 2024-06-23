@@ -1,3 +1,10 @@
+## [2.0.28](https://github.com/technology-studio/sentry-react-native/compare/v2.0.27...v2.0.28) (2024-06-23)
+
+
+### Bug fixes
+
+* use `enabled` flag instead of conditional initialization ([#881](https://github.com/technology-studio/sentry-react-native/issues/881)) ([2bf165b](https://github.com/technology-studio/sentry-react-native/commit/2bf165b94192335b8c6c760d8dc94c7f2b94c333))
+
 ## [2.0.27](https://github.com/technology-studio/sentry-react-native/compare/v2.0.26...v2.0.27) (2024-06-18)
 
 
