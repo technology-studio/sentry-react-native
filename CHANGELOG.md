@@ -1,3 +1,10 @@
+## [2.0.31](https://github.com/technology-studio/sentry-react-native/compare/v2.0.30...v2.0.31) (2024-07-22)
+
+
+### Bug fixes
+
+* disable stall tracking to fix stuck Detox tests ([#908](https://github.com/technology-studio/sentry-react-native/issues/908)) ([9836f25](https://github.com/technology-studio/sentry-react-native/commit/9836f2543ce53ff8b87c824708272e6ed5d74fb8))
+
 ## [2.0.30](https://github.com/technology-studio/sentry-react-native/compare/v2.0.29...v2.0.30) (2024-07-16)
 
 
