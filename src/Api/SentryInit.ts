@@ -22,6 +22,8 @@ export const initSentry = (sentryConfig: SentryConfig): void => {
     integrations: [
       new Sentry.ReactNativeTracing({
         tracingOrigins: ['localhost', strippedBaseUrl],
+        // NOTE: this is a workaround for Detox tests being stuck
+        enableStallTracking: false,
       }),
     ],
   })
