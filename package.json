@@ -50,7 +50,7 @@
   "devDependencies": {
     "@apollo/client": "^3.11.1",
     "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
     "@react-navigation/native": "^6.1.18",
     "@sentry/react-native": "^5.26.0",
     "@txo-peer-dep/log": "^4.0.4",
