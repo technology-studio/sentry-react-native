@@ -1,3 +1,15 @@
+## [2.0.34](https://github.com/technology-studio/sentry-react-native/compare/v2.0.33...v2.0.34) (2024-08-14)
+
+
+### CI
+
+* add lint command for CI ([#935](https://github.com/technology-studio/sentry-react-native/issues/935)) ([ed597b5](https://github.com/technology-studio/sentry-react-native/commit/ed597b5a277dbd1987e6c04d57f4694d4cc9e6d6))
+
+
+### Bug fixes
+
+* **deps:** update dependency @sentry/react-native to ^5.29.0 ([74dbc6b](https://github.com/technology-studio/sentry-react-native/commit/74dbc6bb95a9fea0c85d834c203c1142d771aa0a))
+
 ## [2.0.33](https://github.com/technology-studio/sentry-react-native/compare/v2.0.32...v2.0.33) (2024-08-09)
 
 
