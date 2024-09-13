@@ -1,3 +1,16 @@
+## [2.0.38](https://github.com/technology-studio/sentry-react-native/compare/v2.0.37...v2.0.38) (2024-09-13)
+
+
+### CI
+
+* rename workflows ([#962](https://github.com/technology-studio/sentry-react-native/issues/962)) ([2b80811](https://github.com/technology-studio/sentry-react-native/commit/2b80811db6ac7eaca7916142d847b16570ebb957))
+* update URL for code-quality ([#948](https://github.com/technology-studio/sentry-react-native/issues/948)) ([71979a6](https://github.com/technology-studio/sentry-react-native/commit/71979a6c4c80eba72809b2a1593611261778e7b2))
+
+
+### Bug fixes
+
+* **deps:** update dependency @sentry/react-native to ^5.32.0 ([a3a0e86](https://github.com/technology-studio/sentry-react-native/commit/a3a0e8677439ce3fd333912b930bcfb897a12932))
+
 ## [2.0.37](https://github.com/technology-studio/sentry-react-native/compare/v2.0.36...v2.0.37) (2024-08-28)
 
 
