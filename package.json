@@ -1,6 +1,6 @@
 {
   "name": "@txo/sentry-react-native",
-  "version": "2.0.38",
+  "version": "2.0.39",
   "description": "Technology Studio - Sentry react native",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
