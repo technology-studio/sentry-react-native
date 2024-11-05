@@ -2329,10 +2329,10 @@
     "@sentry/utils" "7.119.1"
     localforage "^1.8.1"
 
-"@sentry/react-native@^5.34.0":
-  version "5.34.0"
-  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-5.34.0.tgz#6a9385aee8e86da49ff2eab65a61176c6bd86fdb"
-  integrity sha512-tba8dcQ+7qpRcCR061VZcLZ60eWfdOgHB4MudCiziPIbACtMahnlRZd0dS19BrqUTPfBDOpD9n5Dq8vnqGriHw==
+"@sentry/react-native@^5.35.0":
+  version "5.35.0"
+  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-5.35.0.tgz#22afc7b339aaa764101d8786e9240e1d1737077c"
+  integrity sha512-fJIwB2rK6LSFqaPN+f6sa/N0/027AJFtTY3UVmjNl4stY7Q3S/L6fIP4qJJF6YMYeZc+/j8+m+1R1yHvXMX3ew==
   dependencies:
     "@sentry/babel-plugin-component-annotate" "2.20.1"
     "@sentry/browser" "7.119.1"
