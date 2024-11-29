@@ -8,9 +8,11 @@ import {
   ServiceOperationError,
   containsNonNetworkError,
 } from '@txo/service-prop'
-import { subscribeErrorListener } from '@txo-peer-dep/error-handler'
+import {
+  subscribeErrorListener,
+  VALIDATION_ERROR,
+} from '@txo-peer-dep/error-handler'
 import * as Sentry from '@sentry/react-native'
-import { VALIDATION_ERROR } from '@txo/service-graphql-react'
 
 export const subscribeSentryErrorListener = (): () => void => (
   subscribeErrorListener((error) => {

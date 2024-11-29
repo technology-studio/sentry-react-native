@@ -2486,10 +2486,10 @@
     "@tufjs/canonical-json" "2.0.0"
     minimatch "^9.0.3"
 
-"@txo-peer-dep/error-handler@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@txo-peer-dep/error-handler/-/error-handler-2.0.1.tgz#6328b1c8c815f44a95b47dc5143b4ffba1d118f4"
-  integrity sha512-Uzl20lP3YxIGqrwwW8rft0k6jZ3SLFfVOPtTV57JBx7H/SCQ9jzm/T1jncrZeBSc08uNH1UXmxjOawM9aTebtg==
+"@txo-peer-dep/error-handler@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@txo-peer-dep/error-handler/-/error-handler-3.1.0.tgz#3225c7c425ffe1a845208998b2bdeb201e50bf84"
+  integrity sha512-LjQZTxFz/JVORg1Aa01hL/AGxeep4+G4tupOh0ANKqnI+aLR03COX9MsCFlZAg4OInNELqYrHNCO+KFj4Uvoag==
   dependencies:
     "@txo/log" "^2.0.16"
 
@@ -2524,21 +2524,6 @@
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.2.0.tgz#d6bf817d0b8fa2eece61f79fc99eedf2516d68b1"
   integrity sha512-P4t09H/Q6AHoyps0jBy5tSp/HruQteyUeoxr758D2entD+rd8f0XXAdcrCCEIBeihlNAkv4MVj/n8bJulw5CLg==
 
-"@txo/functional@^4.6.19":
-  version "4.6.19"
-  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.19.tgz#b51cb2c71307618e086c512108e60ef2b3cc6591"
-  integrity sha512-SDmY7+VKENWD/E6oHAWMx8eeNZc6GsTg47+sL8cHuB5+eLMzsxPPxatT1+VdEe5mFc3heNaGRBTiZQVPa6FM7w==
-  dependencies:
-    "@txo/log" "^2.0.16"
-    utility-types "^3.11.0"
-
-"@txo/hooks-react@^2.3.21":
-  version "2.3.21"
-  resolved "https://registry.yarnpkg.com/@txo/hooks-react/-/hooks-react-2.3.21.tgz#52658d5cf547992758deed5bd07d86f47bdd2e66"
-  integrity sha512-r5aHewRsr8WShvC5zUIZMJRd9GC9ZdUDMxZGWY3labzmSSuPQmHn5nxwo53peW8hBYqX3r0STKuptWHddPqN7A==
-  dependencies:
-    "@txo/functional" "^4.6.19"
-
 "@txo/log-console@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@txo/log-console/-/log-console-3.0.0.tgz#56506a8c6afea9109301ff96520c43815814022d"
@@ -2559,28 +2544,6 @@
     conventional-changelog-conventionalcommits "^7.0.2"
     semantic-release "^23.1.1"
     semantic-release-slack-bot "^4.0.2"
-
-"@txo/service-graphql-react@^3.0.11":
-  version "3.0.11"
-  resolved "https://registry.yarnpkg.com/@txo/service-graphql-react/-/service-graphql-react-3.0.11.tgz#9d2e26128ddd07903e8529816e8a9effdf792360"
-  integrity sha512-bpAF4SaRwDE/lvwF440mFpLfd6xwPJuAhqpa3a9Q9eimswpW1RL8JZnyzdKaLIxFUbnux48+4oFmy12aV+1PIQ==
-  dependencies:
-    "@txo/hooks-react" "^2.3.21"
-    "@txo/service-graphql" "^5.0.3"
-    "@txo/service-prop" "^3.0.3"
-    "@txo/types" "^1.7.0"
-    lodash.get "^4.4.2"
-    lodash.set "^4.3.2"
-    type-fest "^4.29.0"
-
-"@txo/service-graphql@^5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@txo/service-graphql/-/service-graphql-5.0.3.tgz#3e825ff22273c51f6dd4e520ab523779745179e3"
-  integrity sha512-SSvskhR/URqCMwqt+YQE6lR6J8Sq9B34j4ygs9jK+eweqc78C5RqXBRUA/Cfx10M5TphHrAvRkEaZNN9lTC7yA==
-  dependencies:
-    "@txo/log" "^2.0.16"
-    "@txo/service-prop" "^3.0.3"
-    lodash.get "^4.4.2"
 
 "@txo/service-prop@^3.0.3":
   version "3.0.3"
@@ -7223,11 +7186,6 @@ lodash.escaperegexp@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.escaperegexp/-/lodash.escaperegexp-4.1.2.tgz#64762c48618082518ac3df4ccf5d5886dae20347"
   integrity sha512-TM9YBvyC84ZxE3rgfefxUWiQKLilstD6k7PTGt6wfbtXF8ixIJLOL3VYyV/z+ZiPLsVxAsKAFVwWlWeb2Y8Yyw==
 
-lodash.get@^4.4.2:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
-  integrity sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==
-
 lodash.isplainobject@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
@@ -7262,11 +7220,6 @@ lodash.mergewith@^4.6.2:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
   integrity sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==
-
-lodash.set@^4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/lodash.set/-/lodash.set-4.3.2.tgz#d8757b1da807dde24816b0d6a84bea1a76230b23"
-  integrity sha512-4hNPN5jlm/N/HLMCO43v8BXKq9Z7QdAGc/VGrRD61w8gN9g/6jF9A4L1pbUgBLCffi0w9VsXfTOij5x8iTyFvg==
 
 lodash.snakecase@^4.1.1:
   version "4.1.1"
@@ -10403,11 +10356,6 @@ type-fest@^3.0.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.13.1.tgz#bb744c1f0678bea7543a2d1ec24e83e68e8c8706"
   integrity sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==
 
-type-fest@^4.29.0:
-  version "4.29.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.29.0.tgz#c9ac0bd3c7cb2c2fb8fc7b24d5b3eb48daad834e"
-  integrity sha512-RPYt6dKyemXJe7I6oNstcH24myUGSReicxcHTvCLgzm4e0n8y05dGvcGB15/SoPRBmhlMthWQ9pvKyL81ko8nQ==
-
 type-fest@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.6.0.tgz#9c575f7e20530defef4f9cdc5e2c85d6e4ea0fc9"
@@ -10628,11 +10576,6 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
-
-utility-types@^3.11.0:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/utility-types/-/utility-types-3.11.0.tgz#607c40edb4f258915e901ea7995607fdf319424c"
-  integrity sha512-6Z7Ma2aVEWisaL6TvBCy7P8rm2LQoPv6dJ7ecIaIixHcwfbJ0x7mWdbcwlIM5IGQxPZSFYeqRCqlOOeKoJYMkw==
 
 utils-merge@1.0.1:
   version "1.0.1"
