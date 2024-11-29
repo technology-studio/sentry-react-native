@@ -2486,6 +2486,13 @@
     "@tufjs/canonical-json" "2.0.0"
     minimatch "^9.0.3"
 
+"@txo-peer-dep/error-handler@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@txo-peer-dep/error-handler/-/error-handler-3.1.0.tgz#3225c7c425ffe1a845208998b2bdeb201e50bf84"
+  integrity sha512-LjQZTxFz/JVORg1Aa01hL/AGxeep4+G4tupOh0ANKqnI+aLR03COX9MsCFlZAg4OInNELqYrHNCO+KFj4Uvoag==
+  dependencies:
+    "@txo/log" "^2.0.16"
+
 "@txo-peer-dep/log@^4.0.4":
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/@txo-peer-dep/log/-/log-4.0.4.tgz#73611601423b0ec5c134964419bd642a61bd1b56"
@@ -2537,6 +2544,13 @@
     conventional-changelog-conventionalcommits "^7.0.2"
     semantic-release "^23.1.1"
     semantic-release-slack-bot "^4.0.2"
+
+"@txo/service-prop@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-3.0.3.tgz#f8518ec014131358e9e531eba6812f3bedc79f83"
+  integrity sha512-Rt9GVlVXrMFFdK+x36rF86p5IUid49ez4s+aaow4CtMz6KF+j2mEeNvbhqa60Q8rFrwQVbprveXGKWH4EQGnOg==
+  dependencies:
+    "@txo/types" "^1.7.0"
 
 "@txo/tsconfig-cjs@^2.0.0":
   version "2.0.0"
