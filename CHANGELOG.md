@@ -1,3 +1,16 @@
+## [2.1.0](https://github.com/technology-studio/sentry-react-native/compare/v2.0.43...v2.1.0) (2024-11-29)
+
+
+### CI
+
+* add synchronize to PR workflow ([#1023](https://github.com/technology-studio/sentry-react-native/issues/1023)) ([c09768f](https://github.com/technology-studio/sentry-react-native/commit/c09768fba8a6f3f054e3e6074142e5396b893eb4))
+* update pr and release workflows ([#1020](https://github.com/technology-studio/sentry-react-native/issues/1020)) ([d576f17](https://github.com/technology-studio/sentry-react-native/commit/d576f170d8d8d8bb48f915ae32c2da961c6b09d6))
+
+
+### Features
+
+* add sentry error listener ([#1031](https://github.com/technology-studio/sentry-react-native/issues/1031)) ([42aa8f4](https://github.com/technology-studio/sentry-react-native/commit/42aa8f438e2bed2d1e27c0f9005048f467bae83d))
+
 ## [2.0.43](https://github.com/technology-studio/sentry-react-native/compare/v2.0.42...v2.0.43) (2024-11-05)
 
 
