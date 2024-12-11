@@ -1,0 +1,11 @@
+[
+  "@typescript-eslint/no-magic-numbers",
+  "@stylistic/arrow-parens",
+  "@typescript-eslint/no-import-type-side-effects",
+  "@typescript-eslint/no-unnecessary-condition",
+  "@typescript-eslint/no-unsafe-type-assertion",
+  "eslint-comments/require-description",
+  "@typescript-eslint/prefer-regexp-exec",
+  "@stylistic/space-before-function-paren",
+  "@typescript-eslint/consistent-type-exports"
+]
