@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/technology-studio/sentry-react-native/compare/v2.1.1...v2.1.2) (2024-12-18)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo-peer-dep/error-handler to ^3.1.1 ([#1051](https://github.com/technology-studio/sentry-react-native/issues/1051)) ([9f79e1e](https://github.com/technology-studio/sentry-react-native/commit/9f79e1e9aee9ea51038a8c64f6729948e50dab51))
+
 ## [2.1.1](https://github.com/technology-studio/sentry-react-native/compare/v2.1.0...v2.1.1) (2024-12-03)
 
 
