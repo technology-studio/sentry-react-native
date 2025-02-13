@@ -52,7 +52,7 @@
     "react-native": "*"
   },
   "devDependencies": {
-    "@apollo/client": "^3.12.11",
+    "@apollo/client": "^3.13.0",
     "@babel/core": "^7.26.8",
     "@babel/preset-env": "^7.26.8",
     "@react-navigation/native": "^6.1.18",
