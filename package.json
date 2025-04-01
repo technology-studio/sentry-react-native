@@ -78,7 +78,7 @@
     "npm-check-updates": "^17.1.16",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-native": "0.78.1",
+    "react-native": "0.78.2",
     "rimraf": "^6.0.1",
     "ts-jest": "^29.3.1",
     "typescript": "^5.8.2"
