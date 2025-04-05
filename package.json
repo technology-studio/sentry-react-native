@@ -45,7 +45,7 @@
   },
   "peerDependencies": {
     "@sentry/react-native": "^5.36.0",
-    "@txo-peer-dep/error-handler": "^3.1.1",
+    "@txo-peer-dep/error-handler": "^3.2.0",
     "@txo-peer-dep/log": "^4.0.4",
     "@txo-peer-dep/observable-redux": "^2.0.1",
     "@txo-peer-dep/redux": "^1.0.1",
@@ -57,7 +57,7 @@
     "@babel/preset-env": "^7.26.9",
     "@react-navigation/native": "^6.1.18",
     "@sentry/react-native": "^5.36.0",
-    "@txo-peer-dep/error-handler": "^3.1.1",
+    "@txo-peer-dep/error-handler": "^3.2.0",
     "@txo-peer-dep/log": "^4.0.4",
     "@txo-peer-dep/observable-redux": "^2.0.1",
     "@txo-peer-dep/redux": "^1.0.1",
